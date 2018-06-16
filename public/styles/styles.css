@@ -48,17 +48,20 @@ header .jumbotron #greetings {
     flex-direction: column;
     margin: auto;
 }
+header .jumbotron #greetings h1 {
+    font-size: 2rem;
+    padding: 40px;
+}
 header .jumbotron #greetings small {
     text-align:center;
     font-size: .6rem;
     width: 70%;
     margin:auto;
 }
-header .jumbotron figure {
-    padding-right: 0;
-}
+
 header .jumbotron #greetings button {
     margin-top: 30px;
+    display: none;
 }
 
  /* T E C H N O L O G Y */
@@ -70,14 +73,17 @@ header .jumbotron #greetings button {
  }
  .tech h1 {
      text-align: center;
+     font-size: 2rem;
  }
  .tech-items {
-     margin-top: 30px;
-     display: flex;
-     justify-content: space-between
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
  }
 .tech-pics {
     width: 100px;
+    margin:20px;
     height: auto;
 }
 
@@ -119,11 +125,12 @@ header .jumbotron #greetings button {
 /* C O N T A C T */
 .contact {
     border-top: 1px solid #e9ecef;
+    height: 450px;
 }
 .positioned {
     text-align: center;
     position:relative;
-    bottom: 725px;
+    bottom: 200px;
 }
 .positioned h1 {
     margin-bottom: 50px;
@@ -131,4 +138,158 @@ header .jumbotron #greetings button {
 .contact-info {
     display: flex;
     justify-content: space-around;
+    margin-top: 150px;
+}
+
+/* TABLET && LARGE SMARTPHONES */
+@media screen and (min-width: 481px ) and (max-width: 768px) {
+    header .jumbotron figure {
+        padding: 0;
+    }
+    header .jumbotron #greetings {
+        padding:0;
+    }
+    .positioned {
+        bottom: 350px;
+    }
+    .contact-info {
+        margin-top: 350px;
+        margin-bottom: 30px;
+    }
+}
+/* LAPTOPS && TABLET in Landscape */
+@media screen and (min-width: 769px ) and (max-width: 1024px) {
+
+}
+/* LARGE DESKTOPS */
+@media screen and (min-width: 1025px ) and (max-width: 1600px) {
+
+
+    /* H E A D E R */
+    /* header {
+
+    }
+
+    header nav {
+        display: flex;
+        margin: 10px 20px;
+    }
+    header nav #logo {
+        flex-grow:2
+    }
+    header nav a {
+        margin-left:10px;
+    }
+    header nav a:hover {
+        cursor: pointer;
+        color: #610D7F;
+    }
+
+    header .jumbotron {
+        background: #610D7F;
+        color: white;
+        border-radius: 0; 
+        padding: 0;
+        width: 100%;  
+        margin-bottom: 0;
+    }
+    header .jumbotron h1 {
+        font-size: 2.5rem;
+        margin: auto;
+        text-align: center;
+        text-shadow: 2px 2px 2px black;
+    }
+    header .jumbotron figure {
+        margin: 0;
+    }
+    header .jumbotron #greetings {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    header .jumbotron #greetings small {
+        text-align:center;
+        font-size: .6rem;
+        width: 70%;
+        margin:auto;
+    }
+    header .jumbotron figure {
+        padding-right: 0;
+    }
+    header .jumbotron #greetings button {
+        margin-top: 30px;
+    } */
+
+    /* T E C H N O L O G Y */
+    /* .tech {
+        background: rgba(0,123,255,.25);
+        margin-top: 80px;
+        padding-top: 80px;
+        padding-bottom: 80px
+    }
+    .tech h1 {
+        text-align: center;
+    }
+    .tech-items {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between
+    }
+    .tech-pics {
+        width: 100px;
+        height: auto;
+    } */
+
+    /* P O R T F O L I O  */
+    /* .portfolio {
+        margin-top:80px;
+    }
+    .portfolio h1{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .portfolio .projects {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #ccc;
+    }
+    .portfolio .projects .project-pic {
+        display:flex;
+        align-items: center;
+        color: white;
+        text-align: center;
+    } */
+    /* Button */
+    /* .button {
+        background: #0BCB7A;
+        color: white;
+        border: none;
+        width: 40%;
+        padding: 15px;
+        margin: auto;
+        font-size: larger;
+    }
+    .button:hover {
+        cursor: pointer;
+        background: #0AB16B;
+    } */
+
+    /* C O N T A C T */
+    /* .contact {
+        border-top: 1px solid #e9ecef;
+    }
+    .positioned {
+        text-align: center;
+        position:relative;
+        bottom: 725px;
+    }
+    .positioned h1 {
+        margin-bottom: 50px;
+    }
+    .contact-info {
+        display: flex;
+        justify-content: space-around;
+    } */
+
 }
