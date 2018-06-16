@@ -34,6 +34,9 @@ header .jumbotron {
     width: 100%;  
     margin-bottom: 0;
 }
+header .jumbotron .row {
+    margin-right: 0;
+}
 header .jumbotron h1 {
     font-size: 2.5rem;
     margin: auto;
@@ -42,6 +45,7 @@ header .jumbotron h1 {
 }
 header .jumbotron figure {
     margin: 0;
+    padding:0;
 }
 header .jumbotron #greetings {
     display: flex;
@@ -159,11 +163,24 @@ header .jumbotron #greetings button {
 }
 /* LAPTOPS && TABLET in Landscape */
 @media screen and (min-width: 769px ) and (max-width: 1024px) {
-
+    header .jumbotron #greetings h1 {
+        font-size: 2.5rem;
+    }
+    .positioned {
+        bottom: 500px;
+    }
+    .contact-info {
+        margin-top: 50px;
+    }
 }
 /* LARGE DESKTOPS */
 @media screen and (min-width: 1025px ) and (max-width: 1600px) {
-
+    .positioned {
+        bottom: 725px;
+    }
+    .contact-info {
+        margin-top: 100px;
+    }
 
     /* H E A D E R */
     /* header {
