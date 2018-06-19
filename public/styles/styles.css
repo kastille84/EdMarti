@@ -110,6 +110,9 @@ header .jumbotron #greetings button {
     color: white;
     text-align: center;
 }
+.portfolio .projects a {
+    text-decoration: none;
+}
 /* Button */
 .button {
     background: #0BCB7A;
