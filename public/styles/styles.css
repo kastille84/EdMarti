@@ -145,6 +145,13 @@ header .jumbotron #greetings button {
     margin-top: 150px;
 }
 
+.quote {
+    background-color: #0BCB7A;
+    color: white;
+    padding: 50px;
+    text-align:center;
+}
+
 /* TABLET && LARGE SMARTPHONES */
 @media screen and (min-width: 481px ) and (max-width: 768px) {
     header .jumbotron figure {
