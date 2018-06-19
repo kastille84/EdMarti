@@ -193,6 +193,9 @@ header .jumbotron #greetings button {
     .contact-info {
         margin-top: 50px;
     }
+    .quote {
+        height: 300px;
+    }
 }
 /* LARGE DESKTOPS */
 @media screen and (min-width: 1025px ) and (max-width: 1600px) {
@@ -201,6 +204,9 @@ header .jumbotron #greetings button {
     }
     .contact-info {
         margin-top: 100px;
+    }
+    .quote {
+        height: 300px;
     }
 
     /* H E A D E R */
