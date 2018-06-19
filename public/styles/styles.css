@@ -71,7 +71,6 @@ header .jumbotron #greetings button {
  /* T E C H N O L O G Y */
  .tech {
     background: rgba(0,123,255,.25);
-    margin-top: 80px;
     padding-top: 80px;
     padding-bottom: 80px
  }
@@ -157,8 +156,8 @@ header .jumbotron #greetings button {
     margin: auto;
 }
 .quote h1 {
-    font-style: italic;
-    font-family: serif;
+    /* font-style: italic;
+    font-family: serif; */
     font-size: 2rem;
     padding: 30px
 }
