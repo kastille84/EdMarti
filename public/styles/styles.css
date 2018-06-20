@@ -110,6 +110,10 @@ header .jumbotron #greetings button {
     color: white;
     text-align: center;
 }
+.portfolio .projects .project-pic:hover {
+    cursor: pointer;
+    opacity: .8;
+}
 .portfolio .projects a {
     text-decoration: none;
     color: white;
