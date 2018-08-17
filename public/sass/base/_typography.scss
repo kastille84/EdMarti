@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arimo', serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 3rem;
+
+}
+
+.heading-primary {
+    color: $color-white;
+    font-size: 7rem;
+    letter-spacing: .4rem;
+    animation: moveInTop 3s ease-out;
+}
+
+.heading-sub {
+    color: darken($color-white, 20);
+    &__primary {
+        font-size: 4.5rem;
+        animation: moveInLeft 3s ease-out;
+
+    }
+
+    &__secondary {
+        font-size: 3rem;
+        animation: moveInRight 3s ease-out;
+    }
+}
+
+.heading-section {
+    font-size: 4.5rem;
+}
+
+// M E D I A   Q U E R I E S
+/* LAPTOPS && TABLET in Landscape */
+@media screen and (min-width: 769px ) and (max-width: 1024px) {
+    .heading-primary {
+        font-size: 6rem;
+    }
+
+    .heading-sub {
+
+        &__primary {
+            font-size: 3.5rem;
+        }
+
+        &__secondary {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+/* TABLET && LARGE SMARTPHONES */
+@media screen and (min-width: 481px ) and (max-width: 768px) {
+    .heading-primary {
+        font-size: 6rem;
+    }
+
+    .heading-sub {
+
+        &__primary {
+            font-size: 3.5rem;
+        }
+
+        &__secondary {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+/* SMARTPHONES  */
+@media screen and (max-width: 480px) {
+    body {
+        padding:0;
+    }
+    .heading-primary {
+        font-size: 4rem;
+    }
+
+    .heading-sub {
+
+        &__primary {
+            font-size: 2.5rem;
+        }
+
+        &__secondary {
+            font-size: 2rem;
+        }
+    }
+}

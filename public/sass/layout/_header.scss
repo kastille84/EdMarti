@@ -1,0 +1,81 @@
+.header {
+    height: 90vh;
+    background: linear-gradient(to right bottom, 
+                        rgba(lighten($color-primary, 15), .8), 
+                        rgba(darken($color-primary, 15), .8)),
+        url('../../images/header.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &__pic-box {
+        height: 200px;
+        width: 200px;
+        border-radius: 300px;
+        background: url('../../images/profile_pic.jpg') no-repeat ;
+        background-size: cover;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        backface-visibility: hidden;
+    }
+    
+}
+
+// M E D I A   Q U E R I E S
+/* LAPTOPS && TABLET in Landscape */
+@media screen and (min-width: 769px ) and (max-width: 1024px) {
+    .header {
+        &__pic-box {
+            height: 150px;
+            width: 150px;
+        }
+    }
+}
+
+/* TABLET && LARGE SMARTPHONES */
+@media screen and (min-width: 481px ) and (max-width: 768px) {
+    .header {
+        &__pic-box {
+            height: 150px;
+            width: 150px;
+        }
+
+        &__text-box {
+            width: 100%;
+        }
+    }
+}
+
+/* SMARTPHONES  */
+@media screen and (max-width: 480px) {
+    .header {
+        height: 60vh;
+
+        &__pic-box {
+            height: 125px;
+            width: 125px;
+            position: absolute;
+            top: 4rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__text-box {
+            width: 100%;
+            margin-top: 5rem;
+        }
+    }
+}
+
+
+/* LARGE DESKTOPS */
+// @media screen and (min-width: 1025px ) and (max-width: 1600px) {
+
+// }

@@ -1,346 +1,325 @@
-/* COLORS
-purple: #610D7F
-green: #0BCB7A
-*/
-* {
-    font-family: 'Muli', sans-serif;
-}
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(-15rem);
+    opacity: 0; }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
 
-/* H E A D E R */
-header {
+@keyframes moveInRight {
+  0% {
+    transform: translateX(15rem);
+    opacity: 0; }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
 
-}
+@keyframes moveInTop {
+  0% {
+    transform: translatey(-15rem);
+    opacity: 0; }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
 
-header nav {
-    display: flex;
-    margin: 10px 20px;
-}
-header nav #logo {
-    flex-grow:2
-}
-header nav a {
-    margin-left:10px;
-}
-header nav a:hover {
-    cursor: pointer;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Arimo', serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #333;
+  padding: 3rem; }
+
+.heading-primary {
+  color: #f7f7f7;
+  font-size: 7rem;
+  letter-spacing: .4rem;
+  animation: moveInTop 3s ease-out; }
+
+.heading-sub {
+  color: #c4c4c4; }
+  .heading-sub__primary {
+    font-size: 4.5rem;
+    animation: moveInLeft 3s ease-out; }
+  .heading-sub__secondary {
+    font-size: 3rem;
+    animation: moveInRight 3s ease-out; }
+
+.heading-section {
+  font-size: 4.5rem; }
+
+/* LAPTOPS && TABLET in Landscape */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .heading-primary {
+    font-size: 6rem; }
+  .heading-sub__primary {
+    font-size: 3.5rem; }
+  .heading-sub__secondary {
+    font-size: 2.2rem; } }
+
+/* TABLET && LARGE SMARTPHONES */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .heading-primary {
+    font-size: 6rem; }
+  .heading-sub__primary {
+    font-size: 3.5rem; }
+  .heading-sub__secondary {
+    font-size: 2.2rem; } }
+
+/* SMARTPHONES  */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0; }
+  .heading-primary {
+    font-size: 4rem; }
+  .heading-sub__primary {
+    font-size: 2.5rem; }
+  .heading-sub__secondary {
+    font-size: 2rem; } }
+
+.u-center-text {
+  text-align: center; }
+
+.btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  color: #f7f7f7;
+  text-decoration: none;
+  transition: all .3s; }
+
+.btn--1 {
+  background: #0BCB7A;
+  border: 0.5px solid #0BCB7A; }
+  .btn--1:hover {
+    background: #fff;
+    color: #0BCB7A;
+    border: 0.5px solid #0BCB7A; }
+
+.btn--2 {
+  background: #610D7F;
+  border: 0.5px solid #610D7F; }
+  .btn--2:hover {
+    background: #fff;
     color: #610D7F;
-}
+    border: 0.5px solid #610D7F; }
 
-header .jumbotron {
-    background: #610D7F;
-    color: white;
-    border-radius: 0; 
-    padding: 0;
-    width: 100%;  
-    margin-bottom: 0;
-}
-header .jumbotron .row {
-    margin-right: 0;
-}
-header .jumbotron h1 {
-    font-size: 2.5rem;
-    margin: auto;
-    text-align: center;
-    text-shadow: 2px 2px 2px black;
-}
-header .jumbotron figure {
-    margin: 0;
-    padding:0;
-}
-header .jumbotron #greetings {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-}
-header .jumbotron #greetings h1 {
-    font-size: 2rem;
-    padding: 40px;
-}
-header .jumbotron #greetings small {
-    text-align:center;
-    font-size: .6rem;
-    width: 70%;
-    margin:auto;
-}
+.btn--3 {
+  background: #CB280B;
+  border: 0.5px solid #CB280B; }
+  .btn--3:hover {
+    background: #fff;
+    color: #CB280B;
+    border: 0.5px solid #CB280B; }
 
-header .jumbotron #greetings button {
-    margin-top: 30px;
-    display: none;
-}
-
- /* T E C H N O L O G Y */
- .tech {
-    background: rgba(0,123,255,.25);
-    padding-top: 80px;
-    padding-bottom: 80px
- }
- .tech h1 {
-     text-align: center;
-     font-size: 2rem;
- }
- .tech-items {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
- }
-.tech-pics {
-    width: 100px;
-    margin:20px;
-    height: auto;
-}
-
- /* P O R T F O L I O  */
-.portfolio {
-    margin-top:80px;
-}
-.portfolio h1{
-    text-align: center;
-    margin-bottom: 50px;
-}
-.portfolio .projects {
-    width: 70%;
-    margin: auto;
-    margin-bottom: 50px;
-    border-bottom: 1px solid #ccc;
-}
-.portfolio .projects .project-pic {
-    display:flex;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-.portfolio .projects .project-pic:hover {
+.card {
+  width: 20%;
+  text-align: center;
+  background: white;
+  box-shadow: 0 1rem 1rem #bbb;
+  transition: all .3s ease-out; }
+  .card__heading {
+    font-size: 3rem;
+    letter-spacing: .6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f7f7f7; }
+  .card__heading-sub {
+    font-size: 2rem; }
+  .card__body .paragraph {
+    font-size: 1.5rem;
+    letter-spacing: .15rem;
+    width: 80%;
+    margin: 1.5rem auto; }
+  .card:hover {
     cursor: pointer;
-    opacity: .8;
-}
-.portfolio .projects a {
-    text-decoration: none;
-    color: white;
-}
-/* Button */
-.button {
-    background: #0BCB7A;
-    color: white;
-    border: none;
-    width: 40%;
-    padding: 15px;
-    margin: auto;
-    font-size: larger;
-}
-.button:hover {
-    cursor: pointer;
-    background: #0AB16B;
-}
+    transform: translateY(-5rem) scale(1.05);
+    box-shadow: 0 2rem 2rem #bbb; }
 
-/* C O N T A C T */
+.card--1 .card__title {
+  background: linear-gradient(to right bottom, rgba(47, 244, 161, 0.8), rgba(7, 130, 78, 0.8)), url("../../images/givechain.jpg") no-repeat;
+  height: 12rem;
+  margin-bottom: 4rem;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+.card--2 .card__title {
+  background: linear-gradient(to right bottom, rgba(150, 20, 196, 0.8), rgba(44, 6, 58, 0.8)), url("../../images/stint.jpg") no-repeat;
+  height: 12rem;
+  margin-bottom: 4rem;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+.card--3 .card__title {
+  background: linear-gradient(to right bottom, rgba(244, 77, 47, 0.8), rgba(130, 26, 7, 0.8)), url("../../images/venspace.jpg") no-repeat;
+  height: 12rem;
+  margin-bottom: 4rem;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+/* LAPTOPS && TABLET in Landscape */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    width: 25%; } }
+
+/* TABLET && LARGE SMARTPHONES */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .card {
+    width: 42%;
+    margin-bottom: 5rem; } }
+
+/* SMARTPHONES  */
+@media screen and (max-width: 480px) {
+  .card {
+    width: 65%;
+    margin-bottom: 10rem; } }
+
 .contact {
-    border-top: 1px solid #e9ecef;
-    height: 450px;
-}
-.positioned {
-    text-align: center;
-    position:relative;
-    bottom: 200px;
-}
-.positioned h1 {
-    margin-bottom: 50px;
-}
-.contact-info {
+  padding: 20rem 20rem 45rem 20rem;
+  background: #f7f7f7;
+  background: url("../../images/contact2.png") no-repeat;
+  background-position: bottom; }
+  .contact__info {
     display: flex;
     justify-content: space-around;
-    margin-top: 150px;
-}
+    margin-top: 13rem; }
+    .contact__info h4 {
+      font-size: 3rem; }
+  .contact__clients p {
+    font-size: 2rem; }
 
-.quote {
-    background-color: #0BCB7A;
-    color: white;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    text-shadow: 1px 1px 1px black;
-}
-.quote blockquote {
-    margin: auto;
-}
-.quote h1 {
-    /* font-style: italic;
-    font-family: serif; */
-    font-size: 2rem;
-    padding: 30px
-}
-/* TABLET && LARGE SMARTPHONES */
-@media screen and (min-width: 481px ) and (max-width: 768px) {
-    header .jumbotron figure {
-        padding: 0;
-    }
-    header .jumbotron #greetings {
-        padding:0;
-    }
-    .positioned {
-        bottom: 350px;
-    }
-    .contact-info {
-        margin-top: 350px;
-        margin-bottom: 30px;
-    }
-    .quote h1 {
-        width: 50%;
-        margin: auto;
-    }
-}
+.header {
+  height: 90vh;
+  background: linear-gradient(to right bottom, rgba(150, 20, 196, 0.8), rgba(44, 6, 58, 0.8)), url("../../images/header.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .header__pic-box {
+    height: 200px;
+    width: 200px;
+    border-radius: 300px;
+    background: url("../../images/profile_pic.jpg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 2rem;
+    left: 2rem; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backface-visibility: hidden; }
+
 /* LAPTOPS && TABLET in Landscape */
-@media screen and (min-width: 769px ) and (max-width: 1024px) {
-    header .jumbotron #greetings h1 {
-        font-size: 2.5rem;
-    }
-    .positioned {
-        bottom: 500px;
-    }
-    .contact-info {
-        margin-top: 50px;
-    }
-    .quote {
-        height: 300px;
-    }
-}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header__pic-box {
+    height: 150px;
+    width: 150px; } }
+
+/* TABLET && LARGE SMARTPHONES */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .header__pic-box {
+    height: 150px;
+    width: 150px; }
+  .header__text-box {
+    width: 100%; } }
+
+/* SMARTPHONES  */
+@media screen and (max-width: 480px) {
+  .header {
+    height: 60vh; }
+    .header__pic-box {
+      height: 125px;
+      width: 125px;
+      position: absolute;
+      top: 4rem;
+      left: 50%;
+      transform: translateX(-50%); }
+    .header__text-box {
+      width: 100%;
+      margin-top: 5rem; } }
+
 /* LARGE DESKTOPS */
-@media screen and (min-width: 1025px ) and (max-width: 1600px) {
-    .positioned {
-        bottom: 725px;
-    }
-    .contact-info {
-        margin-top: 100px;
-    }
-    .quote {
-        height: 300px;
-    }
+.section-projects {
+  padding: 20rem 0;
+  background: #f7f7f7; }
+  .section-projects .projects {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 18rem; }
 
-    /* H E A D E R */
-    /* header {
+.section-quote {
+  padding: 20rem;
+  color: #f7f7f7;
+  background: linear-gradient(to right bottom, rgba(47, 244, 161, 0.8), rgba(7, 130, 78, 0.8)), url("../../images/quote.jpg") no-repeat;
+  background-size: cover;
+  background-position: center; }
 
-    }
+.section-tech {
+  padding: 20rem;
+  background: #f7f7f7; }
 
-    header nav {
-        display: flex;
-        margin: 10px 20px;
-    }
-    header nav #logo {
-        flex-grow:2
-    }
-    header nav a {
-        margin-left:10px;
-    }
-    header nav a:hover {
-        cursor: pointer;
-        color: #610D7F;
-    }
+.tech {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 18rem; }
+  .tech__pic-box {
+    width: 20%;
+    padding: 3rem; }
+  .tech__pic {
+    width: 100%; }
 
-    header .jumbotron {
-        background: #610D7F;
-        color: white;
-        border-radius: 0; 
-        padding: 0;
-        width: 100%;  
-        margin-bottom: 0;
-    }
-    header .jumbotron h1 {
-        font-size: 2.5rem;
-        margin: auto;
-        text-align: center;
-        text-shadow: 2px 2px 2px black;
-    }
-    header .jumbotron figure {
-        margin: 0;
-    }
-    header .jumbotron #greetings {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-    }
-    header .jumbotron #greetings small {
-        text-align:center;
-        font-size: .6rem;
-        width: 70%;
-        margin:auto;
-    }
-    header .jumbotron figure {
-        padding-right: 0;
-    }
-    header .jumbotron #greetings button {
-        margin-top: 30px;
-    } */
+/* LAPTOPS && TABLET in Landscape */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .section-projects {
+    padding: 15rem 0; }
+    .section-projects .projects {
+      margin-top: 15rem; } }
 
-    /* T E C H N O L O G Y */
-    /* .tech {
-        background: rgba(0,123,255,.25);
-        margin-top: 80px;
-        padding-top: 80px;
-        padding-bottom: 80px
-    }
-    .tech h1 {
-        text-align: center;
-    }
-    .tech-items {
-        margin-top: 30px;
-        display: flex;
-        justify-content: space-between
-    }
-    .tech-pics {
-        width: 100px;
-        height: auto;
-    } */
+/* TABLET && LARGE SMARTPHONES */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .section-projects {
+    padding: 15rem 0; }
+    .section-projects .projects {
+      margin-top: 15rem;
+      flex-direction: column;
+      align-items: center; } }
 
-    /* P O R T F O L I O  */
-    /* .portfolio {
-        margin-top:80px;
-    }
-    .portfolio h1{
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .portfolio .projects {
-        width: 70%;
-        margin: auto;
-        margin-bottom: 50px;
-        border-bottom: 1px solid #ccc;
-    }
-    .portfolio .projects .project-pic {
-        display:flex;
-        align-items: center;
-        color: white;
-        text-align: center;
-    } */
-    /* Button */
-    /* .button {
-        background: #0BCB7A;
-        color: white;
-        border: none;
-        width: 40%;
-        padding: 15px;
-        margin: auto;
-        font-size: larger;
-    }
-    .button:hover {
-        cursor: pointer;
-        background: #0AB16B;
-    } */
+/* SMARTPHONES  */
+@media screen and (max-width: 480px) {
+  .section-projects {
+    padding: 15rem 0; }
+    .section-projects .projects {
+      margin-top: 15rem;
+      flex-direction: column;
+      align-items: center; } }
 
-    /* C O N T A C T */
-    /* .contact {
-        border-top: 1px solid #e9ecef;
-    }
-    .positioned {
-        text-align: center;
-        position:relative;
-        bottom: 725px;
-    }
-    .positioned h1 {
-        margin-bottom: 50px;
-    }
-    .contact-info {
-        display: flex;
-        justify-content: space-around;
-    } */
-
-}
+/* LAPTOPS && TABLET in Landscape */
+/* TABLET && LARGE SMARTPHONES */
+/* SMARTPHONES  */

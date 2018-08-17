@@ -1,0 +1,107 @@
+.card {
+    width: 20%;
+    // height: 36rem;
+    text-align: center;
+    background: white;
+    box-shadow: 0 1rem 1rem #bbb;
+    transition: all .3s ease-out;
+
+    &__heading {
+        font-size: 3rem;
+        letter-spacing:.6rem;
+        position:absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-white;
+    }
+
+    &__heading-sub {
+        font-size: 2rem;
+    }
+
+    &__body {
+
+        .paragraph {
+            font-size: 1.5rem;
+            letter-spacing: .15rem;
+            width: 80%;
+            margin: 1.5rem auto;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-5rem) scale(1.05);
+        box-shadow: 0 2rem 2rem #bbb;
+
+    }
+}
+
+.card--1 {    
+    .card__title {
+        background: linear-gradient(to right bottom, 
+                        rgba(lighten($color-secondary, 15), .8), 
+                        rgba(darken($color-secondary, 15), .8)),
+        url('../../images/givechain.jpg') no-repeat;
+        // below will be same for other cards
+        height: 12rem;
+        margin-bottom: 4rem;
+        background-size: cover;
+        background-position: center;
+        position:relative;
+    }
+}
+.card--2 {    
+    .card__title {
+        background: linear-gradient(to right bottom, 
+                        rgba(lighten($color-primary, 15), .8), 
+                        rgba(darken($color-primary, 15), .8)),
+        url('../../images/stint.jpg') no-repeat;
+        // below will be same for other cards
+        height: 12rem;
+        margin-bottom: 4rem;
+        background-size: cover;
+        background-position: center;
+        position:relative;
+    }
+}
+.card--3 {    
+    .card__title {
+        background: linear-gradient(to right bottom, 
+                        rgba(lighten($color-tertiary, 15), .8), 
+                        rgba(darken($color-tertiary, 15), .8)),
+        url('../../images/venspace.jpg') no-repeat;
+        // below will be same for other cards
+        height: 12rem;
+        margin-bottom: 4rem;
+        background-size: cover;
+        background-position: center;
+        position:relative;
+    }
+}
+
+// M E D I A   Q U E R I E S
+/* LAPTOPS && TABLET in Landscape */
+@media screen and (min-width: 769px ) and (max-width: 1024px) {
+    .card {
+        width: 25%;
+        
+    }
+}
+
+/* TABLET && LARGE SMARTPHONES */
+@media screen and (min-width: 481px ) and (max-width: 768px) {
+    .card {
+        width: 42%;
+        margin-bottom: 5rem;
+    }
+}
+
+/* SMARTPHONES  */
+@media screen and (max-width: 480px) {
+    .card {
+        width: 65%;
+        margin-bottom: 10rem;
+    }
+}

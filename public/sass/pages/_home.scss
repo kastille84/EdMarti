@@ -1,0 +1,82 @@
+
+.section-projects {
+    padding: 20rem 0;
+    background: $color-off-white;
+
+    .projects {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 18rem;
+    }
+}
+
+.section-quote {
+    padding: 20rem;
+    color: $color-white;
+    background: linear-gradient(to right bottom, 
+                        rgba(lighten($color-secondary, 15), .8), 
+                        rgba(darken($color-secondary, 15), .8)),
+        url('../../images/quote.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.section-tech {
+    padding: 20rem;
+    background: $color-off-white;
+}
+
+.tech {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 18rem;
+    
+    &__pic-box {
+        width: 20%;
+        padding: 3rem;
+    }
+
+    &__pic {
+        width: 100%;
+    }
+}
+// M E D I A   Q U E R I E S
+/* LAPTOPS && TABLET in Landscape */
+@media screen and (min-width: 769px ) and (max-width: 1024px) {
+    .section-projects {
+        padding: 15rem 0;
+
+        .projects {
+            margin-top: 15rem;
+        }
+    }
+}
+
+/* TABLET && LARGE SMARTPHONES */
+@media screen and (min-width: 481px ) and (max-width: 768px) {
+    .section-projects {
+        padding: 15rem 0;
+
+        .projects {
+            margin-top: 15rem;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+/* SMARTPHONES  */
+@media screen and (max-width: 480px) {
+    .section-projects {
+        padding: 15rem 0;
+
+        .projects {
+            margin-top: 15rem;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

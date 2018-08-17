@@ -1,0 +1,33 @@
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utility";
+
+@import "components/button";
+@import "components/card";
+
+@import "layout/footer";
+@import "layout/header";
+
+@import "pages/home";
+
+
+
+// M E D I A   Q U E R I E S
+/* LAPTOPS && TABLET in Landscape */
+// @media screen and (min-width: 769px ) and (max-width: 1024px) {
+    
+// }
+
+/* TABLET && LARGE SMARTPHONES */
+// @media screen and (min-width: 481px ) and (max-width: 768px) {
+
+// }
+
+/* SMARTPHONES  */
+// @media screen and (max-width: 480px) {
+
+// }
