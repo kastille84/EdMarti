@@ -23,3 +23,41 @@
         }
     }
 }
+
+// M E D I A   Q U E R I E S
+/* LAPTOPS && TABLET in Landscape */
+// @media screen and (min-width: 769px ) and (max-width: 1024px) {
+    
+// }
+
+/* TABLET && LARGE SMARTPHONES */
+@media screen and (min-width: 481px ) and (max-width: 768px) {
+    .contact {
+        padding: 20rem 0 45rem 0;
+
+        &__info h4 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+    }
+}
+
+/* SMARTPHONES  */
+@media screen and (max-width: 480px) {
+    .contact {
+        padding: 10rem 0 48rem 0;
+        
+        &__info h4 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        &__clients p {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+	}
+
+}

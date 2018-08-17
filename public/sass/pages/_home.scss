@@ -66,6 +66,21 @@
             align-items: center;
         }
     }
+
+    .section-quote {
+        padding: 20rem 1rem;
+    }
+
+    .section-tech {
+        padding: 20rem 1rem 10rem 1rem;
+    }
+
+    .tech__pic-box {
+        width : 30%;
+    }
+    
+    
+    
 }
 
 /* SMARTPHONES  */
@@ -79,4 +94,22 @@
             align-items: center;
         }
     }
+
+    .section-quote {
+        padding: 20rem 0;
+    }
+    
+    .section-tech {
+        padding: 20rem 0 10rem 0;
+    }
+
+    .tech{
+        margin-top: 15rem;
+
+        &__pic-box {
+            width: 44%;
+            padding: 2rem;
+        }
+    }
+    
 }
