@@ -95,6 +95,14 @@ body {
   .heading-sub__secondary {
     font-size: 2rem; } }
 
+@media screen and (max-width: 320px) {
+  .heading-primary {
+    font-size: 3rem; }
+  .heading-sub__primary {
+    font-size: 2.2rem; }
+  .heading-sub__secondary {
+    font-size: 1.6rem; } }
+
 .u-center-text {
   text-align: center; }
 
@@ -153,10 +161,25 @@ body {
     letter-spacing: .15rem;
     width: 80%;
     margin: 1.5rem auto; }
+  .card__footer {
+    display: none;
+    padding: 1rem;
+    font-size: 1.2rem; }
+    .card__footer--1 {
+      background: #0BCB7A;
+      color: #033a23; }
+    .card__footer--2 {
+      background: #610D7F;
+      color: black; }
+    .card__footer--3 {
+      background: #CB280B;
+      color: #3a0b03; }
   .card:hover {
     cursor: pointer;
     transform: translateY(-5rem) scale(1.05);
     box-shadow: 0 2rem 2rem #bbb; }
+    .card:hover .card__footer {
+      display: block; }
 
 .card--1 .card__title {
   background: linear-gradient(to right bottom, rgba(47, 244, 161, 0.8), rgba(7, 130, 78, 0.8)), url("../../images/givechain.jpg") no-repeat;
@@ -198,6 +221,10 @@ body {
   .card {
     width: 65%;
     margin-bottom: 10rem; } }
+
+@media screen and (max-width: 320px) {
+  .card {
+    width: 85%; } }
 
 .contact {
   padding: 20rem 20rem 45rem 20rem;
@@ -284,6 +311,10 @@ body {
     .header__text-box {
       width: 100%;
       margin-top: 5rem; } }
+
+@media screen and (max-width: 320px) {
+  .header {
+    height: 70vh; } }
 
 /* LARGE DESKTOPS */
 .section-projects {

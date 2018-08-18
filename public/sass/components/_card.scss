@@ -30,11 +30,34 @@
         }
     }
 
+    &__footer {        
+        display: none;
+        padding: 1rem;
+        font-size: 1.2rem;
+
+        &--1 {
+            // background: lighten($color-secondary, 15);
+            background: $color-secondary;
+            color: darken($color-secondary, 30);
+        }
+        &--2 {
+            background: $color-primary;
+            color: darken($color-primary, 30);
+        }
+        &--3 {
+            background: $color-tertiary;
+            color: darken($color-tertiary, 30);
+        }
+    }    
+
     &:hover {
         cursor: pointer;
         transform: translateY(-5rem) scale(1.05);
         box-shadow: 0 2rem 2rem #bbb;
 
+        .card__footer {
+            display: block;
+        }
     }
 }
 
@@ -103,5 +126,11 @@
     .card {
         width: 65%;
         margin-bottom: 10rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .card {
+        width: 85%;
     }
 }

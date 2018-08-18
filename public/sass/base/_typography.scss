@@ -89,3 +89,20 @@ body {
         }
     }
 }
+
+@media screen and (max-width:320px) {
+    .heading-primary {
+        font-size: 3rem;
+    }
+
+    .heading-sub {
+
+        &__primary {
+            font-size: 2.2rem;
+        }
+
+        &__secondary {
+            font-size: 1.6rem;
+        }
+    }
+}
