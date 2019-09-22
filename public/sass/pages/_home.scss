@@ -2,7 +2,8 @@
 .section-projects {
     padding: 20rem 0;
     background: $color-off-white;
-
+    min-height: 1131px;
+    
     .projects {
         display: flex;
         justify-content: space-evenly;

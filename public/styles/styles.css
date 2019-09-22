@@ -319,7 +319,8 @@ body {
 /* LARGE DESKTOPS */
 .section-projects {
   padding: 20rem 0;
-  background: #f7f7f7; }
+  background: #f7f7f7;
+  min-height: 1131px; }
   .section-projects .projects {
     display: flex;
     justify-content: space-evenly;
